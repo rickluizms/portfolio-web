@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 100px 18%;
+}
+
+.home{
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 4rem;
+    text-align: center;
+    padding: 100px 18%;
+}
+
+.home-text h1{
+    margin: 10px 0px 25px;
+    line-height: 1;
+    font-weight: 500;
+    text-align: center;
+}
+
+.home-text h5 {
+    margin-bottom: 23px;
+    font-size: 19px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.home-text p {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+button {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+    margin-top: 3vh;
+}
+   
+button:active {
+color: #666;
+box-shadow: inset 4px 4px 12px #c5c5c5,
+            inset -4px -4px 12px #ffffff;
+}

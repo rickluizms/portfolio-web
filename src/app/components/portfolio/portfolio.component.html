@@ -1,19 +1,13 @@
-<div>
-    <img src="./assets/images/banner.png" alt="First slide" style="display: flex; width: 100%;">
-    <!--<div class="carousel-caption d-none d-md-flex">-*/-->
-        <div class="Cards">
-            <div class="row">
-            <div class="card" *ngFor="let skill of filteredSkills">
-                <img class="img" [src]="skill.imageUrl" width="40" height="40">
-                <div class="textBox">
+<section class="card-container">
+    <div class="card-container card" *ngFor="let skill of filteredSkills">
+        <img class="img" [src]="skill.imageUrl" width="40" height="40">
+            <div class="textBox">
                 <p class="text head">{{skill.name}}</p>
                 <p class="text price">R$ {{ skill.price }}</p>
-                <p class="desc">{{skill.description}}</p>
+                <p class="text desc">{{skill.description}}</p>
                 <div>
                     <a [routerLink]="['/portfolio/', skill.id]" class="btn btn-light">Mais detalhes</a>
                 </div>
-                </div>
             </div>
-            </div>
-        </div>
-</div>
+    </div>
+</section>
