@@ -76,56 +76,47 @@ box-shadow: inset 4px 4px 12px #c5c5c5,
 }
 
 /*Analise de Dados*/
-.sessao-dados{
-    background: #ffffff;
-    height: 80vh;
-    margin: 0px 100px 0px 100px;
-}
-
 .dados-header{
+    margin-top: 12vh;
+    padding: auto;
+}
+
+.sessao-dados{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 4rem;
     text-align: center;
-    margin-bottom: 50px;
+    background: #ffffff;
 }
 
-.dados-descrip{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    align-items: center;
+.dados-text{
+    text-align: center;
 }
 
-.dados-dash{
-
-}
-
-.dados-dash img{
-    width: 50vw;
-}
-
-.dados-icons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.dados-icons img{
-    align-items: center;
-    width: 45px;
-    margin: 15px;
-}
-
-.dados-header h5{
+.dados-text h5{
     color: rgb(67, 1, 120);
 }
 
-.dados-header h1{
+.dados-text h1{
     margin-bottom: 30px;
 }
 
-.dados-skills{
+.dados-item{
+    
+}
+
+.dados-item-img{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 0.9vh;
+}
+
+.dados-item-img img{
+    width: 21px;
+    margin: 9px;
 }
 
 /*Front End*/
